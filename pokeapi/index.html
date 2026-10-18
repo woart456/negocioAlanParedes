@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador PokeAPI</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f9; padding: 20px; }
+        .card { background: white; padding: 20px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-top: 20px; min-width: 250px; }
+        input { padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 8px 16px; font-size: 16px; background-color: #ffcb05; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; color: #2a75bb; }
+        button:hover { background-color: #e6b800; }
+        .error { color: red; font-weight: bold; }
+        .loading { color: #555; font-style: italic; }
+        img { width: 150px; height: 150px; }
+    </style>
+</head>
+<body>
+    <h1>Buscador de Pokémon</h1>
+    <input type="text" id="pokemonInput" placeholder="Nombre o ID del Pokémon">
+    <button id="searchBtn">Buscar</button>
+
+    <div id="result" class="card">
+        <p>Ingresa un Pokémon para buscar.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
